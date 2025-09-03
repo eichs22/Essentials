@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 938689835}
   - component: {fileID: 938689834}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3594,6 +3594,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1685580053}
+  - {fileID: 938689835}
   - {fileID: 4983630}
   - {fileID: 260037646}
   - {fileID: 588372537}
@@ -3603,4 +3604,3 @@ SceneRoots:
   - {fileID: 265921719}
   - {fileID: 747495954}
   - {fileID: 33843827}
-  - {fileID: 938689835}
