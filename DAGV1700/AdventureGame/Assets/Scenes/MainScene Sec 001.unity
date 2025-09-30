@@ -307,6 +307,46 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d88b910d2a3cbc74785f85bbfb9051bf, type: 3}
+--- !u!1 &247908819 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1553926738821117093, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+  m_PrefabInstance: {fileID: 5518231784147233122}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &247908823
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247908819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 04c44d70dcbd0784ab9609fe7afd9a11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &247908824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247908819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58e542e4e133483ca34f3afb817f460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &440674492
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,7 +874,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1268200338660010467, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9397936
+      value: 3.939794
       objectReference: {fileID: 0}
     - target: {fileID: 1268200338660010467, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
       propertyPath: m_LocalPosition.y
@@ -876,10 +916,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spiked Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 3890944042807571534, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 996226279}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: SpikyBallAnim
+      objectReference: {fileID: 0}
+    - target: {fileID: 7285804698118044436, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      propertyPath: triggerEnterEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2225141979013809939, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 996226279}
   m_SourcePrefab: {fileID: 100100000, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
 --- !u!1001 &876130943
 PrefabInstance:
@@ -892,6 +975,10 @@ PrefabInstance:
     - target: {fileID: 2089411594731499089, guid: 137a7c8ebf172cd4b82d3722771f9b37, type: 3}
       propertyPath: m_Name
       value: Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227336101460466006, guid: 137a7c8ebf172cd4b82d3722771f9b37, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6524833868490814283, guid: 137a7c8ebf172cd4b82d3722771f9b37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -995,6 +1082,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+--- !u!1 &996226272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2225141979013809939, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+  m_PrefabInstance: {fileID: 802720053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &996226279
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996226272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7d752db1e9bfbf43a07eab122d07e79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1006970739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1207,10 @@ PrefabInstance:
     - target: {fileID: 2226849518609469547, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
       propertyPath: m_Name
       value: Gray
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085553047458441068, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6382887949325766001, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2357,7 +2475,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1553926738821117093, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247908823}
+    - targetCorrespondingSourceObject: {fileID: 1553926738821117093, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 247908824}
   m_SourcePrefab: {fileID: 100100000, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
