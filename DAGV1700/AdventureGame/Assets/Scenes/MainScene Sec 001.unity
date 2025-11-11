@@ -1262,6 +1262,59 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &696803201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696803203}
+  - component: {fileID: 696803202}
+  m_Layer: 6
+  m_Name: border
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &696803202
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696803201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &696803203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696803201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.17725, y: 5.43, z: 0}
+  m_LocalScale: {x: 20, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &720363269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3529,6 +3582,7 @@ GameObject:
   - component: {fileID: 1638514454}
   - component: {fileID: 1638514455}
   - component: {fileID: 1638514456}
+  - component: {fileID: 1638514457}
   m_Layer: 10
   m_Name: MushroomDude
   m_TagString: Untagged
@@ -3736,6 +3790,19 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   triggerExitMatches: []
+--- !u!114 &1638514457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638514447}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 546c98ccbf48649a8b90fe7e0358d642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1524991942}
 --- !u!198 &1672840725 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1228425931063514932, guid: 89c5b3e35d9049043b1e8f24c4ada07e, type: 3}
@@ -4120,7 +4187,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.3157806
+  orthographic size: 5.500659
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4145,11 +4212,11 @@ Transform:
   m_GameObject: {fileID: 1878875870}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -12.650308}
+  m_LocalPosition: {x: 1.1427486, y: -2.443766, z: -11.047665}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1524991942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1878875875
 MonoBehaviour:
@@ -4860,6 +4927,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8058457201683781120, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1672840727}
+    - targetCorrespondingSourceObject: {fileID: 8058457201683781120, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1878875874}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4629534208257971782, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
       insertIndex: -1
@@ -4878,7 +4948,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1878875874}
   - {fileID: 5518231784147233122}
   - {fileID: 73529006}
   - {fileID: 1227987661}
@@ -4903,3 +4972,4 @@ SceneRoots:
   - {fileID: 1638514451}
   - {fileID: 734508259}
   - {fileID: 1838898042}
+  - {fileID: 696803203}
