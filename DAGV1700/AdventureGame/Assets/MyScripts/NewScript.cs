@@ -6,7 +6,7 @@ using UnityEngine;
 /// </summary>
 [Tooltip("Controls basic movement of a 2D platformer character.")]
 [RequireComponent(typeof(CharacterController))]
-public class Example : MonoBehaviour
+public class NewScript : MonoBehaviour
 {
     [Tooltip("The speed at which the character moves horizontally.")]
     public float moveSpeed = 5f;
