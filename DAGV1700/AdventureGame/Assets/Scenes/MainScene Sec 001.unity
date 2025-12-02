@@ -2039,6 +2039,87 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 996226293}
   m_SourcePrefab: {fileID: 100100000, guid: 24d676e80a71ed0439d9a2aba125a664, type: 3}
+--- !u!1 &835864657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7813661352835373707, guid: d88b910d2a3cbc74785f85bbfb9051bf, type: 3}
+  m_PrefabInstance: {fileID: 1192702334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &835864659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835864657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c956dfee3a37a45dd99f9f346b9ff541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nameIdObj: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
+  holdTime: 0.1
+  triggerEnterMatches:
+  - nameIdObj: {fileID: 11400000, guid: f7b05ed2186414f76b7648e4d51b4ad5, type: 2}
+    canRepeat: 0
+    repeatTime: 0
+    workEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 98d09719f44a15a4a97f32ea2bcaed4c, type: 2}
+          m_TargetAssemblyTypeName: SimpleFloatData, Assembly-CSharp
+          m_MethodName: UpdateValue
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: -0.34
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 607972975}
+          m_TargetAssemblyTypeName: MySimpleImageBehavior, Assembly-CSharp
+          m_MethodName: UpdateWithFloatData
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0.34
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    repeatEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    delayedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  triggerExitMatches: []
+--- !u!65 &835864660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835864657}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.46, y: 1.15, z: 1}
+  m_Center: {x: -7, y: -4.16, z: 0}
 --- !u!1001 &876130943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2664,14 +2745,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SimpleImageBehaviour, Assembly-CSharp
+      - m_Target: {fileID: 607972975}
+        m_TargetAssemblyTypeName: MySimpleImageBehavior, Assembly-CSharp
         m_MethodName: UpdateWithFloatData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 20
           m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2860,7 +2941,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7813661352835373707, guid: d88b910d2a3cbc74785f85bbfb9051bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 835864660}
+    - targetCorrespondingSourceObject: {fileID: 7813661352835373707, guid: d88b910d2a3cbc74785f85bbfb9051bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 835864659}
   m_SourcePrefab: {fileID: 100100000, guid: d88b910d2a3cbc74785f85bbfb9051bf, type: 3}
 --- !u!1001 &1217595881
 PrefabInstance:
