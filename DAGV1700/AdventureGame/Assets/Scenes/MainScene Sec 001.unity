@@ -2132,6 +2132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple
       objectReference: {fileID: 0}
+    - target: {fileID: 2089411594731499089, guid: 137a7c8ebf172cd4b82d3722771f9b37, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 4227336101460466006, guid: 137a7c8ebf172cd4b82d3722771f9b37, type: 3}
       propertyPath: m_SortingOrder
       value: -1
@@ -2276,9 +2280,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2866911254220615277, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_Name
       value: Platform (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157391944523038810, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2319,6 +2339,10 @@ PrefabInstance:
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106661369917139172, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2547,6 +2571,10 @@ PrefabInstance:
     - target: {fileID: 2226849518609469547, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
       propertyPath: m_Name
       value: Gray
+      objectReference: {fileID: 0}
+    - target: {fileID: 2226849518609469547, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     - target: {fileID: 4085553047458441068, guid: 5c479394312d39b438e059e38ccf0c76, type: 3}
       propertyPath: m_SortingOrder
@@ -2957,9 +2985,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2866911254220615277, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_Name
       value: Platform (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157391944523038810, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3000,6 +3044,10 @@ PrefabInstance:
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106661369917139172, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3568,9 +3616,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2866911254220615277, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_Name
       value: Platform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3278273131891704293, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6157391944523038810, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3611,6 +3675,10 @@ PrefabInstance:
     - target: {fileID: 6544403475311926678, guid: 9050b18c71af1694988127bab63682ab, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8106661369917139172, guid: 9050b18c71af1694988127bab63682ab, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3668,6 +3736,10 @@ PrefabInstance:
     - target: {fileID: 5755269378286102479, guid: 47d7d2598986d89479e3f71c8d8a9630, type: 3}
       propertyPath: m_Name
       value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755269378286102479, guid: 47d7d2598986d89479e3f71c8d8a9630, type: 3}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     - target: {fileID: 7605247225808867528, guid: 47d7d2598986d89479e3f71c8d8a9630, type: 3}
       propertyPath: m_SortingOrder
@@ -4202,6 +4274,18 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 1.5
   gravity: -9.81
+--- !u!114 &1524991950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583125935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3564f5b44e8fb474daec03616441c755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &1545473335 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6617668056153366645, guid: 9fdf549283e65e14289a910feb8f5428, type: 3}
@@ -4596,7 +4680,7 @@ GameObject:
   - component: {fileID: 1856476938}
   m_Layer: 0
   m_Name: NavPlane
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5746,8 +5830,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4257194626260068928, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8058457201683781120, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
@@ -5763,6 +5846,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4629534208257971782, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1524991946}
+    - targetCorrespondingSourceObject: {fileID: 4629534208257971782, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1524991950}
     - targetCorrespondingSourceObject: {fileID: 1553926738821117093, guid: e017be3b10452bd4a9c3759ace8a24c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 247908823}
