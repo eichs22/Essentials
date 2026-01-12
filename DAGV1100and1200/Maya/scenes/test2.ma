@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: test2.ma
-//Last modified: Mon, Jan 12, 2026 04:05:24 PM
+//Last modified: Mon, Jan 12, 2026 04:06:50 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "346FC779-4605-49DA-68D2-72AED4CAC8C0";
+fileInfo "UUID" "F56066E0-4CAC-374B-9232-6BB5EE86DF02";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "D1CD697C-47D3-ACD7-9DC7-F990104D0CCD";
@@ -88,6 +88,20 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr ".dr" 1;
+createNode transform -n "pCube2";
+	rename -uid "E9E0A0DF-46FA-75B6-E860-8FAEC560059D";
+	setAttr ".t" -type "double3" -45.133058705207745 0 0 ;
+	setAttr ".s" -type "double3" 18.134724369901349 18.134724369901349 18.134724369901349 ;
+createNode mesh -n "pCubeShape2" -p "pCube2";
+	rename -uid "56E3BA38-4E71-3A1B-BD3E-CF8A2BA3DF0A";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "6D130EAD-4D2E-0DAC-64F8-4AA02DA3ACDE";
 	setAttr -s 3 ".lnk";
@@ -215,6 +229,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "372A81B2-4E91-0046-282C-30BBEA981C15";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polyCube -n "polyCube2";
+	rename -uid "0BDFE64A-4EF3-EED8-44AA-A7A9D6680D3F";
+	setAttr ".cuv" 4;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -237,6 +254,7 @@ select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
+	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -261,6 +279,7 @@ select -ne :hardwareRenderGlobals;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
 connectAttr "polyExtrudeFace1.out" "pCubeShape1.i";
+connectAttr "polyCube2.out" "pCubeShape2.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "svgStandardSurface1SG.message" ":defaultLightSet.message";
@@ -283,4 +302,5 @@ connectAttr "svgStandardSurface1SG.pa" ":renderPartition.st" -na;
 connectAttr "svgStandardSurface1.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape2.iog" ":initialShadingGroup.dsm" -na;
 // End of test2.ma
