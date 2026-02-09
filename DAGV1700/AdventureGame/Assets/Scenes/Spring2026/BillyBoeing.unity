@@ -5712,7 +5712,7 @@ GameObject:
   - component: {fileID: 479283326}
   - component: {fileID: 479283325}
   m_Layer: 0
-  m_Name: Idle
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
