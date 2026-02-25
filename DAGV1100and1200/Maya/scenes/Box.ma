@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Box.ma
-//Last modified: Tue, Feb 24, 2026 11:40:58 AM
+//Last modified: Tue, Feb 24, 2026 11:58:14 AM
 //Codeset: 1252
 requires maya "2026";
 currentUnit -l centimeter -a degree -t film;
@@ -9,7 +9,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "7A70414A-4229-49E2-AD81-D790BFA9EB12";
+fileInfo "UUID" "717BD089-42EC-370B-F14F-8AA1AE3CCF3A";
 createNode transform -s -n "persp";
 	rename -uid "1D887D8A-40A1-7D9C-B703-6D942E5C0060";
 	setAttr ".v" no;
@@ -169,6 +169,15 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "EF2A26B8-443D-118D-6B9B-B48ABBF87FB5";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode polySmoothFace -n "polySmoothFace1";
+	rename -uid "2E64B0A4-4BC7-A1C7-B724-54A0E6C6F812";
+	setAttr ".ics" -type "componentList" 1 "f[*]";
+	setAttr ".sdt" 2;
+	setAttr ".suv" yes;
+	setAttr ".ps" 0.10000000149011612;
+	setAttr ".ro" 1;
+	setAttr ".ma" yes;
+	setAttr ".m08" yes;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -214,7 +223,7 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "polyBevel1.out" "pCubeShape1.i";
+connectAttr "polySmoothFace1.out" "pCubeShape1.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -223,6 +232,7 @@ connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "polyCube1.out" "polyBevel1.ip";
 connectAttr "pCubeShape1.wm" "polyBevel1.mp";
+connectAttr "polyBevel1.out" "polySmoothFace1.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 // End of Box.ma
