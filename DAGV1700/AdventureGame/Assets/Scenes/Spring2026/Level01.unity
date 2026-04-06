@@ -32954,8 +32954,8 @@ GameObject:
   - component: {fileID: 1632485457}
   - component: {fileID: 1632485456}
   m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
+  m_Name: MainCamera
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33047,7 +33047,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.201697
+  orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -34885,6 +34885,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1632485459}
   - {fileID: 1403121611}
   - {fileID: 1901677818}
   - {fileID: 753764778}
@@ -34916,4 +34917,3 @@ SceneRoots:
   - {fileID: 475644082}
   - {fileID: 447067404}
   - {fileID: 2003105515}
-  - {fileID: 1632485459}
